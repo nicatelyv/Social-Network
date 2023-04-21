@@ -8,6 +8,15 @@
         height: calc(100vh - 70px);
         overflow: scroll;
         background-color: themed("bgSoft");
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -22,6 +31,7 @@
                 padding: 20px;
                 margin-bottom: 20px;
                 background-color: themed("bg");
+
                 span {
                     color: gray;
                 }
@@ -56,6 +66,7 @@
                         }
 
                         p {
+                            flex: 5;
                             color: themed("textColorSoft");
                         }
 
