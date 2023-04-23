@@ -11,11 +11,6 @@ const Stories = () => {
             img: "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
         },
         {
-            id: 1,
-            name: "Nijat",
-            img: "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
-        },
-        {
             id: 2,
             name: "Nijat",
             img: "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -29,13 +24,18 @@ const Stories = () => {
             id: 4,
             name: "Nijat",
             img: "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
-        }
+        },
+        {
+            id: 5,
+            name: "Nijat",
+            img: "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
     ]
 
     return (
         <div className='stories'>
             <div className="story">
-                <img src={currentUser.profilePicture} alt="" />
+                <img src={currentUser.profilePic} alt="" />
                 <span>{currentUser.name}</span>
                 <button>+</button>
             </div>

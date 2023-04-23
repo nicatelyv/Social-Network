@@ -1,0 +1,84 @@
+.stories {
+  display: flex;
+  gap: 10px;
+  height: 180px;
+  margin-bottom: 30px;
+}
+@media (max-width: 998px) {
+  .stories {
+    height: 150px;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .stories {
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+.stories .story {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .stories .story {
+    width: 50px;
+    height: 50px;
+    flex: none;
+    border-radius: 50%;
+  }
+}
+.stories .story img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stories .story span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .stories .story span {
+    display: none;
+  }
+}
+.stories .story button {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  color: white;
+  background-color: #5271ff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .stories .story button {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 998px) {
+  .stories .story button {
+    bottom: 0;
+    left: 55px;
+  }
+}/*# sourceMappingURL=stories.css.map */

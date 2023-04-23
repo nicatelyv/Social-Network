@@ -16,6 +16,12 @@
         min-height: 600px;
         overflow: hidden;
 
+        @include tablet {
+            overflow: auto;
+            width: 80%;
+            flex-direction: column;
+        }
+
         @include mobile {
             overflow: auto;
             width: 90%;

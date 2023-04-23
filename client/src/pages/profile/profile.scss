@@ -13,6 +13,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                opacity: .8;
             }
 
             .profilePic {
@@ -64,9 +65,11 @@
                     flex: 1;
                     display: flex;
                     gap: 10px;
-                    @include tablet{
+
+                    @include tablet {
                         flex-wrap: wrap;
                     }
+
                     a {
                         color: themed("textColorSoft");
                     }
@@ -89,14 +92,19 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        gap: 10px;
 
                         .item {
                             display: flex;
                             align-items: center;
-                            gap: 5px;
                             color: themed("textColorSoft");
 
                             span {
+                                font-size: 12px;
+                            }
+
+                            a {
+                                color: themed("textColorSoft");
                                 font-size: 12px;
                             }
                         }

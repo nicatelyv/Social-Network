@@ -1,0 +1,104 @@
+@import "../../style.scss";
+
+.share {
+    @include themify($themes) {
+        -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        margin-bottom: 30px;
+
+        .container {
+            padding: 20px;
+
+            hr {
+                border: none;
+                height: 0.5px;
+                background-color: themed("border");
+            }
+
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    flex: 3;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    input {
+                        border: none;
+                        outline: none;
+                        width: 70%;
+                        border-radius: 30px;
+                        padding-left: 20px;
+                        background-color: transparent;
+                        color: themed("textColor");
+                        height: 40px;
+                    }
+                }
+
+                .right {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    .file {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 0px;
+                    }
+                }
+            }
+
+            .bottom {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    display: flex;
+                    gap: 20px;
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        cursor: pointer;
+
+                        img {
+                            width: 30px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .right {
+                    button {
+                        width: 60px;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: #5271ff;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
