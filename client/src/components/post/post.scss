@@ -16,10 +16,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                position: relative;
 
                 .userInfo {
                     display: flex;
-                    gap: 20px;
+                    gap: 10px;
 
                     img {
                         width: 40px;
@@ -40,6 +41,19 @@
                             font-size: 12px;
                         }
                     }
+                }
+
+                button {
+                    width: 60px;
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: red;
+                    padding: 5px;
+                    cursor: pointer;
+                    color: white;
                 }
             }
 
